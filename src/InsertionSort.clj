@@ -1,6 +1,6 @@
 (ns insertion-sort)
 
-(def array-1 (vec (repeatedly 10 #(rand-int 20))))
+(def initial-vec (vec (repeatedly 10 #(rand-int 20))))
 
 (defn ins-sort
       [lhs-arr key]
@@ -18,8 +18,8 @@
             )
       )
 
-(println array-1)
-(println(insertion-sort array-1))
+(println initial-vec)
+(println(insertion-sort initial-vec))
 
 
 
