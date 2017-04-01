@@ -1,4 +1,4 @@
-## Algorithms in Java ##
+## Algorithms ##
 
 #### 1. Insertion Sort ####
 
