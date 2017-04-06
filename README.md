@@ -14,3 +14,20 @@ The efficiency and running time of insertion sort is affected by the size of the
 and how well sorted its values already are.
 
 Insertion sort has order of growth of &theta;(n<sup>2</sup>), and is unsuitable for large data sets.
+
+#### 2. Merge Sort ####
+A divide and conquer algorithm which works by recursively dividing the original problem into smaller problems
+which are solved for and subsequently recombined to produce a sorted solution.
+ 
+The original array is divided into two subarrays, with indices p - the first element of the first subarray;
+q - the last element of the second subarray; and q - the last element of the second subarray.
+The subsequences are divided recursively, until divided into sequences of length one, which is already in sorted order.
+Following this, the merge process initiates wherein two subsequences are merged in sorted order by comparing the first elements
+of the subsequences, and adding the lesser of the two compared values to a sorted sequence.
+
+Merge sort has an order of growth of &theta;(nlgn). The divide step of this algorithm computes the 
+middle element of the subarray, and therefore takes constant time. Recursively solving two subsequences
+contributes 2T(n/2) [explain] to running time. Merging takes time &theta;(n). The total cost of this can 
+be proven to be &theta;(nlgn).
+
+// Is it a new array each time merging takes place 
