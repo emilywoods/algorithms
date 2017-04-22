@@ -12,7 +12,7 @@
       (loop [sorted-vec []
              unsorted-vec unsorted-vec]
             (if (empty? unsorted-vec)
-              sorted-vec
+              insertion-sort
               (recur (ins-sort sorted-vec (first unsorted-vec))(rest unsorted-vec))
               )
             )
