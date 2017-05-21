@@ -30,4 +30,3 @@ middle element of the subarray, and therefore takes constant time. Recursively s
 contributes 2T(n/2) [explain] to running time. Merging takes time &theta;(n). The total cost of this can 
 be proven to be &theta;(nlgn).
 
-// Is it a new array each time merging takes place 
